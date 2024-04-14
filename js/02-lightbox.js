@@ -20,35 +20,6 @@ function createImage() {
 }
 createImage();
 
-// galleryIndex.addEventListener("click", itemSelected);
-
-// function itemSelected(event) {
-//   event.preventDefault();
-
-//   if (!event.target.classList.contains("gallery__image")) {
-//     return;
-//   }
-
-//   const instance = basicLightbox.create(
-//     `<img src = '${event.target.dataset.source}'>`,
-//     {
-//       onShow: (instance) => {
-//         document.addEventListener("keydown", pressEsc);
-//       },
-//       onClose: (instance) => {
-//         document.removeEventListener("keydown", pressEsc);
-//       },
-//     }
-//   );
-//   instance.show();
-
-//   function pressEsc(event) {
-//     if (event.code === "Escape") {
-//       instance.close();
-//     }
-//   }
-// }
-
 var lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionPosition: "bottom",
